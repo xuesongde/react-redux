@@ -1,0 +1,8 @@
+node_modules/
+.idea/
+*.zip
+*.rar
+*.via
+*.tmp
+*.err
+.node-version

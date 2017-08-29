@@ -1,0 +1,24 @@
+.example{
+	.title{
+		padding: .5rem;
+	    font-size: .43rem;
+	    text-align: center;
+	    color: #f60;
+	    display: none;
+	}
+	.slider-frame ul{
+		height: 5rem !important;
+	}
+	.get-coupon-button{
+		z-index: 10;
+	    position: fixed;
+	    bottom: 0;
+	    left: 0;
+	    height: 1rem;
+	    width: 100%;
+	    background: #5993ff;
+	    line-height: 1rem;
+	    text-align: center;
+	    color: #fff;
+	}
+}
