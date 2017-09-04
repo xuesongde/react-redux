@@ -13,7 +13,7 @@ export default class Root extends Component{
     return (
       <Provider store={store}>
         <Router history={history}>
-          <Route path="/example"            component = {Example}/>
+          <Route path="/"            component = {Example}/>
           <Route path="/next-step/:img"   component = {NextStep}/>
         </Router>
       </Provider>

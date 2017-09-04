@@ -4,7 +4,7 @@
   "description": "<p align=\"center\">   <a href=\"https://reacttraining.com/react-router/\">     <img alt=\"react-router\" src=\"http://reactjs.cn/react/img/logo.svg\" width=\"144\">   </a> </p>",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --hot --inline --port 8080 --host 192.168.51.193",
+    "start": "webpack-dev-server --hot --inline --port 3000 --host 192.168.51.193",
     "build": "npm run clean & webpack --progress --colors -p",
     "clean": "rimraf ./build/*",
     "lint": "eslint . --ext .js",

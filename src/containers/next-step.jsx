@@ -21,7 +21,7 @@ class NextStep extends Component {
         {value: 3, label: '猩猩詹'},
         {value: 4, label: '夜店登'},
       ],
-      limit:"篮球star",
+      limit:"你喜欢的球星",
       maskDisplay:'block',
     }
     //查询支付结果
@@ -62,7 +62,7 @@ class NextStep extends Component {
     return (
       <div className="next-step">
         <ul>
-            <li><label>优惠券类型</label>
+            <li><label>猜你喜欢</label>
               <div className="div">
                 <List style={{ backgroundColor: 'white' }} className="picker-list">
                   <Picker onOk={this.limitOk} onclick={this.limitOk} data={this.state.district} cols={1} extra={this.state.limit} title="球星" className="forss">

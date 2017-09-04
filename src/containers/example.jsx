@@ -11,7 +11,7 @@ class Example extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      img:""
+      img:"0"
     };
   }
   async componentWillMount(){

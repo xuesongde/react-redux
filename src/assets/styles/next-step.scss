@@ -48,6 +48,9 @@
 					-webkit-flex-basis: 100%;
 					flex-basis: 100%;
 				}
+				.am-picker-col-item-selected{
+					color: #5993ff;
+				}
 			}
 		}
 	}
@@ -66,4 +69,8 @@
 }
 .am-modal-mask{
 	background-color: rgba(0, 0, 0, 0.6);
+	height: 100%;
+    width: 100%;
+    z-index: 999;
+    position: absolute;
 }
