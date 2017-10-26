@@ -57,6 +57,7 @@ class NextStep extends Component {
   }
   limitOk=()=>{
     console.log('你的爱好....');
+    hashHistory.push('/list');
   }
   render() {
     return (

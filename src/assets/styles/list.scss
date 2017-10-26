@@ -1,0 +1,163 @@
+.redCatCouponlist{
+	.coupon-tip{
+		height: .7rem;
+		background: #ff5559;
+		line-height: .7rem;
+		color: #fff;
+		padding-left: .3rem;
+	}
+	.no-coupon{
+		height: 10rem;
+		background: url('../images/mycoupon/no-coupon.png') no-repeat center .5rem;
+		background-position:center center;
+		text-align: center;
+	    font-size: .28rem;
+	    padding-top: 6rem;
+	    padding-right: .5rem;
+	    color: #888;
+	    display: none;
+	}
+	.no-coupon-tip {
+	    text-align: center;
+	    color: #999;
+	    width: 100%;
+	    margin-top: .25rem;
+	    bottom:0;
+	}
+	ul{
+		.common{
+			background-position: 100% 100%;
+		    background-size: 1.19rem 1.14rem;
+		    background-color: #fff;
+		    background-repeat: no-repeat;
+		    $greyColor:#ccc;
+		    $greyColor1:#ddd;
+		    height: 2.2rem;
+			margin:.25rem .2rem 0rem .2rem;
+			border-radius: .04rem;
+			border-left: solid $greyColor;
+			.bg-div{
+				background-image: url('../images/redhood/bg-grey.png');
+				background-position: 0% 100%;
+			    background-repeat: no-repeat;
+			    background-size: 1.91rem 2.14rem;
+			    height: 100%;
+				.updiv{
+					div{
+						display: inline-block;
+					}
+					color: $greyColor;
+					font-family: Arial;
+					padding: .22rem .4rem .2rem .48rem;
+					.left{
+						width: 49.5%;
+						.rmb{
+							font-size: .34rem;
+						}
+						.shu{
+							font-size: .9rem;
+							display: inline-block;
+						    margin-left: .16rem;
+						    font-weight: 500;
+						}
+					}
+					.right{
+						width: 49.5%;
+						p{
+							text-align: right;
+						}
+						.man{
+							font-size: .28rem;
+						}
+						.yong{
+							font-size: .24rem;
+							color: $greyColor1;
+							margin-top: .05rem;
+						}
+					}
+				}
+				hr{
+				    border:none;
+				    height: 1px;
+				    border-top:1px dashed #eee;
+				    width: 94%;
+	    			margin: 0 3% 0 3%;
+				}
+				.yxq{
+					font-size: .24rem;
+					color: $greyColor1;
+					padding: .17rem .4rem .16rem .44rem;
+				}
+			}
+		}
+		.gq{
+			@extend .common;
+			background-image: url('../images/redhood/gq1.png');
+		}
+		.sy{
+			background-image: url('../images/redhood/sy1.png');
+			@extend .common;
+		}
+		li{
+			$baseColor:#5993ff;
+			height: 2.2rem;
+			margin:.25rem .2rem 0rem .2rem;
+			background: #fff;
+			border-radius: .04rem;
+			border-left: solid $baseColor;
+			.bg-div{
+				background-image: url('../images/redhood/bg.png');
+				background-position: 0% 100%;
+			    background-repeat: no-repeat;
+			    background-size: 1.91rem 2.14rem;
+			    height: 100%;
+				.updiv{
+					div{
+						display: inline-block;
+					}
+					color: $baseColor;
+					font-family: Arial;
+					padding: .22rem .4rem .2rem .48rem;
+					.left{
+						width: 49.5%;
+						.rmb{
+							font-size: .34rem;
+						}
+						.shu{
+							font-size: .9rem;
+							display: inline-block;
+							margin-left: .16rem;
+							font-weight: 500;
+						}
+					}
+					.right{
+						width: 49.5%;
+						p{
+							text-align: right;
+						}
+						.man{
+							font-size: .28rem;
+						}
+						.yong{
+							font-size: .24rem;
+							color: #999999;
+							margin-top: .05rem;
+						}
+					}
+				}
+				hr{
+				    border:none;
+				    height: 1px;
+				    border-top:1px dashed #eee;
+				    width: 94%;
+	    			margin: 0 3% 0 3%;
+				}
+				.yxq{
+					font-size: .24rem;
+					color: #999999;
+					padding: .17rem .4rem .16rem .44rem;
+				}
+			}
+		}
+	}
+}
