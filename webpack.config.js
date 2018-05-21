@@ -143,6 +143,7 @@ module.exports= {
     hot: true, // 模块热更新，配置HotModuleReplacementPlugin
     https: false, // 适用于ssl安全证书网站
     noInfo: false, // 只在热加载错误和警告
+    host:'0.0.0.0',
     proxy: {
       "/v1/article/*": {
         target: "http://10.10.32.156",

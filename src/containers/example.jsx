@@ -16,7 +16,7 @@ class Example extends Component {
   }
   async componentWillMount(){
     document.title = "demo";
-    await this.props.actions.changeTitle('11');  // 获取图片资源
+    await this.props.actions.changeTitle();  // 获取图片资源
   }
   componentWillReceiveProps(nextProps){
     console.log(nextProps);
@@ -51,7 +51,7 @@ class Example extends Component {
               beforeChange={(from, to) => {}}
               easing="easeInOutQuart"
             >
-              {example.title.list.map((val,index) => {
+              {example.title.map((val,index) => {
                   return (
                     <img onClick={this.handleBanner.bind(this,val)} src={val.img} key={index}/>
                   )

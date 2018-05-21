@@ -3,5 +3,5 @@ const path_cmsapi = process.env.NODE_ENV === 'production'?'https://u.jyallpay.co
 
 //接口地址
 export default {
-  EXAMPLE           : `http://www.easy-mock.com/mock/599fe56cbd4203191f535ed9/xsd/data/imageList`,//图片数据集   GET
+  EXAMPLE           : `https://www.easy-mock.com/mock/599fe56cbd4203191f535ed9/xsd/data/imageList`,//图片数据集   GET
 }

@@ -3,18 +3,6 @@ let cookieConfig = {};
 if(process.env.NODE_ENV === 'production'){
   cookieConfig = {domain:''}
 }
-//是否显示分享 有这个不显示
-let input=document.createElement('input');
-
-input.id='jywk';
-
-input.setAttribute("id","jywk");
-
-input.setAttribute("value","jywk");
-
-input.setAttribute("type","hidden");
-
-document.body.appendChild(input);
 
 export function saveCookie(name,value) {
   cookie.save(name, value, cookieConfig)

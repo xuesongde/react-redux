@@ -7,7 +7,7 @@ import {
 } from '../constants'
 
 const example = createReducer(fromJS({
-  title: {list:[]}
+  title: []
 }),{
   [EXAMPLE]: (state, action) => {
     return state.merge({
