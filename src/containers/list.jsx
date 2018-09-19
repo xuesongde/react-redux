@@ -21,18 +21,6 @@ class ListNew extends Component {
           toGetData:true,
           dataList:[1,2,3,4]
         }
-      let self=this;
-      document.onscroll=function(e){
-            if(document.documentElement.clientHeight+document.body.scrollTop+10>=document.documentElement.scrollHeight){
-              if(self.state.nextPage&&self.state.toGetData){
-                //发送请求
-              }else{
-                self.setState({
-                  noCouponTip:'block'
-                });
-              }
-            }
-      }
       this.subStrTime=(str)=>{
             return str.split(' ')[0].replace(/-/g,'.');
       }
