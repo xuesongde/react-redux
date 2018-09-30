@@ -4,14 +4,26 @@ import { Modal, Button, WingBlank, WhiteSpace, Toast ,Carousel} from 'antd-mobil
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import * as Actions from 'Actions'
-import {Link,hashHistory} from 'react-router';
+import { Link,hashHistory } from 'react-router';
+import InfoWindow from '../component/static/infoWindow';//无状态组件
+import DragOperation from '../component/dynamic/dragOperation';//动态组件
 import '../assets/styles/example';
 
 class Example extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      img:"0"
+      img:"0",
+      entered:{
+        locationName:'chaoyangmen',
+        city:'beijing',
+        countryName:'China',
+      },
+      coordinate:{
+        lat:'1',
+        lng:'0'
+      },
+      initData:[1,2,3]
     };
   }
   async componentWillMount(){
@@ -58,6 +70,9 @@ class Example extends Component {
               })}
             </Carousel>
 
+        <InfoWindow entered={this.state.entered} coordinate={this.state.coordinate}></InfoWindow>
+
+        <DragOperation initData={this.state.initData}></DragOperation>
         <div onClick={this.next} className="get-coupon-button">
             下一步
         </div>

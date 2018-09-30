@@ -1,0 +1,29 @@
+.win{
+	width: 100%;
+	border: solid 1px #eee;
+	padding: .2rem;
+	margin-top: .2rem;
+	h6{
+
+	}
+	.has-border{
+		border-top: solid 1px #eee;
+		margin-top: .1rem;
+		padding-top: .05rem;
+	}
+	p{  margin: .2rem;
+		span{
+			margin-right: .1rem;
+		    font-weight: 500;
+		    min-width: 1.83rem;
+    		display: inline-block;
+		}
+	}
+	a{
+		text-decoration: none;
+	    color: #2e6da4 !important;
+	    display: inline-block;
+	    text-align: center;
+	    width: 100%;
+	}
+}
