@@ -6,7 +6,7 @@ var WindowInfo=(props)=> {
   return(
          <div className="win">    
          <h6>    
-           Current Location  
+           Current Location achieved by static component 
          </h6>    
          <p className="has-border"><span>You entered: </span>{props.entered.locationName+', '+props.entered.city+', '+props.entered.countryName}</p>  
          <p><span>Latitude: </span> {props.coordinate.lat}</p>  

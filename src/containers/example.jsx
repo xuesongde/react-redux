@@ -38,7 +38,7 @@ class Example extends Component {
      hashHistory.push('/next-step/'+this.state.img);
   }
   afterChange=(e)=>{
-    console.log(e);
+    //console.log(e);
     this.setState({
       img:e
     });
@@ -64,6 +64,7 @@ class Example extends Component {
               easing="easeInOutQuart"
             >
               {example.title.map((val,index) => {
+                  
                   return (
                     <img onClick={this.handleBanner.bind(this,val)} src={val.img} key={index}/>
                   )
@@ -72,7 +73,7 @@ class Example extends Component {
 
         <InfoWindow entered={this.state.entered} coordinate={this.state.coordinate}></InfoWindow>
 
-        <DragOperation initData={this.state.initData}></DragOperation>
+        <DragOperation initData={(console.log(this.state),this.state.initData)}></DragOperation>
         <div onClick={this.next} className="get-coupon-button">
             下一步
         </div>
