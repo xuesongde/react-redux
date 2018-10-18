@@ -75,4 +75,10 @@ export function dateFormat() {
   };
 }
 
-
+//交换数组位置
+export function exchangePosition(arry,one,theotherone){
+  let temp=arry[one];
+  arry[one]=arry[theotherone];
+  arry[theotherone]=temp;
+  return arry;
+}

@@ -6,6 +6,7 @@ import configureStore from '../redux/configureStore'
 import Example  from './example';
 import NextStep from './next-step';
 import List from './list';
+import Drag from './drag';
 
 export default class Root extends Component{
   render(){
@@ -17,6 +18,7 @@ export default class Root extends Component{
           <Route path="/"            component = {Example}/>
           <Route path="/next-step/:img"   component = {NextStep}/>
           <Route path="/list"   component = {List}/>
+          <Route path="/drag"   component = {Drag}/>
         </Router>
       </Provider>
     )
