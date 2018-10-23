@@ -82,3 +82,15 @@ export function exchangePosition(arry,one,theotherone){
   arry[theotherone]=temp;
   return arry;
 }
+//non ie browsers
+export const getParamFromNonIe = key =>{
+  let url=new URL(window.location.href);
+  return url.searchParams.get(key);
+}
+//ie browsers
+export const getParam = name =>{
+  name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+  var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+  var results = regex.exec(location.search);
+  return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+}
