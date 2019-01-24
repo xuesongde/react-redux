@@ -7,6 +7,9 @@ import Example  from './example';
 import NextStep from './next-step';
 import List from './list';
 import Drag from './drag';
+import DragBeautiful from './dragBeautiful';
+import ReactTree from './reactTree';
+
 
 export default class Root extends Component{
   render(){
@@ -19,6 +22,8 @@ export default class Root extends Component{
           <Route path="/next-step/:img"   component = {NextStep}/>
           <Route path="/list"   component = {List}/>
           <Route path="/drag"   component = {Drag}/>
+          <Route path="/drag-beautiful"   component = {DragBeautiful}/>
+          <Route path="/react-tree"   component = {ReactTree}/>
         </Router>
       </Provider>
     )

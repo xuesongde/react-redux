@@ -56,14 +56,24 @@ class Drag extends Component {
         {
           this.state.divList.map((val,index) => {
                   return (
-                    <div data-order={index} key={index} draggable="true" onDragStart={this.dragStartHandler.bind(this)} onDrop={this.drop_handler.bind(this)} onDragOver={this.dragover_handler.bind(this)}>
+                    <div 
+                    data-order={index} 
+                    key={index} 
+                    draggable="true" 
+                    onDragStart={this.dragStartHandler.bind(this)} 
+                    onDrop={this.drop_handler.bind(this)} 
+                    onDragOver={this.dragover_handler.bind(this)}>
                       {val}
                     </div>
                   )
               })
         }
         <a onClick={this.next}>click me</a>
-        <div id="drag" onDragStart={this.dragStartHandler.bind(this)}  style={{display:this.state.isDragDisplay?'block':'none'}} className="drag" draggable="true" >
+        <div id="drag" 
+        onDragStart={this.dragStartHandler.bind(this)}  
+        style={{display:this.state.isDragDisplay?'block':'none'}} 
+        className="drag" 
+        draggable="true" >
             drag
         </div>
         <div className="drop-zone" onDrop={this.drop_handler.bind(this)} onDragOver={this.dragover_handler.bind(this)}>
